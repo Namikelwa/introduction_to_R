@@ -7,3 +7,7 @@ my_data$date <- as.Date(my_data$date, format="%m/%d/%y")
 #my_data is a dataframe 
 #date is a variable with a list of dates
 my_data$date <- as.Date(as.character(my_data$date), format="%m/%d/%y")
+#as.character is used when the variable is type factor...we convert it to character before converting the date type.
+
+#Verify that the conversion worked and that the variable type has changed from character/factor to type date
+str(my_data)
