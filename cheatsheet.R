@@ -4,4 +4,6 @@
 
 my_data$date <- as.Date(my_data$date, format="%m/%d/%y") 
 #or we could use this below if we run into errors
+#my_data is a dataframe 
+#date is a variable with a list of dates
 my_data$date <- as.Date(as.character(my_data$date), format="%m/%d/%y")
